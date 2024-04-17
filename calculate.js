@@ -10,14 +10,11 @@ function triangleLength() {
     const thValue = th.value;
     const height = parseFloat(thValue);
 
-    const area = 0.5 * tbValue * thValue;
+    const area = 0.5 * base * height;
 
     const h2 = document.createElement('h2');
     h2.innerText = 'The area of the triangle is ' + area;
 
     document.getElementById('triangle-area').appendChild(h2);
-
-
-
 
 }

@@ -21,7 +21,7 @@
             <!-- Cards container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- Card One Triangle -->
-                <div class="card w-96 bg-base-100 shadow-xl p-4">
+                <div class="card w-96 bg-base-100 shadow-xl p-4 hover:bg-amber-50 ">
                     <figure><img src="images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
@@ -47,32 +47,135 @@
                 <!-- Card One Ends -->
 
                 <!-- Card Two -->
-                <div class="card w-96 bg-base-100 shadow-xl p-4">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                <div class="card w-96 bg-base-100 shadow-xl p-4 hover:bg-amber-50">
+                    <figure><img src="images/rectangle.png" alt="triangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p class="text-center">Area (A) = w X i</p>
+
+
+                        <div>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-b"
+                                placeholder="w">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-h"
+                                placeholder="i">
+                            <span class="ml-2">cm</span>
+                        </div>
+
+
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="triangleLength()" class="btn btn-primary w-full"
+                                id="btn-calculate">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card Two Ends -->
 
                 <!-- Card Three -->
-                <div class="card w-96 bg-base-100 shadow-xl p-4">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                <div class="card w-96 bg-base-100 shadow-xl p-4 hover:bg-amber-50">
+                    <figure><img src="images/parallelogram.png" alt="triangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p class="text-center">Area (A) = b X h</p>
+
+
+                        <div>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-b"
+                                placeholder="b">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-h"
+                                placeholder="h">
+                            <span class="ml-2">cm</span>
+                        </div>
+
+
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="triangleLength()" class="btn btn-primary w-full"
+                                id="btn-calculate">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card Three Ends -->
+
+                <!-- Card Four -->
+                <div class="card w-96 bg-base-100 shadow-xl p-4 hover:bg-amber-50 mt-5">
+                    <figure><img src="images/rhombus.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p class="text-center">Area (A) = b<sub>1</sub> X b <sub>2</sub></p>
+
+
+                        <div>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-b"
+                                placeholder="b1">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-h"
+                                placeholder="b2">
+                            <span class="ml-2">cm</span>
+                        </div>
+
+
+                        <div class="card-actions justify-end">
+                            <button onclick="triangleLength()" class="btn btn-primary w-full"
+                                id="btn-calculate">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Four Ends -->
+
+                <!-- Card Five -->
+                <div class="card w-96 bg-base-100 shadow-xl p-4 hover:bg-amber-50 mt-5">
+                    <figure><img src="images/pentagon.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p class="text-center">Area (A) = 0.5 x p x b</p>
+
+
+                        <div>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-b"
+                                placeholder="b1">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-h"
+                                placeholder="b2">
+                            <span class="ml-2">cm</span>
+                        </div>
+
+
+                        <div class="card-actions justify-end">
+                            <button onclick="triangleLength()" class="btn btn-primary w-full"
+                                id="btn-calculate">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Five Ends -->
+
+                <!-- Card Six -->
+                <div class="card w-96 bg-base-100 shadow-xl p-4 hover:bg-amber-50 mt-5">
+                    <figure><img src="images/ellipse.png" alt="triangle" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p class="text-center">Area (A) = πab</p>
+
+
+                        <div>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-b"
+                                placeholder="b1">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="triangle-h"
+                                placeholder="b2">
+                            <span class="ml-2">cm</span>
+                        </div>
+
+
+                        <div class="card-actions justify-end">
+                            <button onclick="triangleLength()" class="btn btn-primary w-full"
+                                id="btn-calculate">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Six Ends -->
+
             </div>
 
             <!-- Area calculation container -->
